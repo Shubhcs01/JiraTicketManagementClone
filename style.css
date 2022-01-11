@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.toolbox-cont {
+  height: 5rem;
+  background-color: #4b4b4b;
+  display: flex;
+  align-items: center;
+}
+
+.toolbox-cont > * {
+  margin-left: 4rem;
+  border-radius: 2px;
+}
+
+.priorityBox-cont {
+  width: 16rem;
+  height: 3.5rem;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.color {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.actionBox-cont {
+  width: 8rem;
+  height: 3rem;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actionBox-cont > * {
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.lightsalmon {
+  background-color: lightsalmon;
+}
+.lightcoral {
+  background-color: lightcoral;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.black {
+  background-color: black;
+}
+
+.border {
+  border: 2px solid #d1d8e0;
+}
+
+/* pseudo-selector */
+.priorityBox-cont > *:hover {
+  border: 2px solid #d1d8e0;
+}
+.actionBox-cont > *:hover {
+  background-color: #485460;
+}
+
+.modal-cont {
+  width: 45vw;
+  height: 50vh;
+  background-color: lightblue;
+  display: none;
+  position: absolute;
+  top: calc((100vh - 50vh) / 2);
+  left: calc((100vw - 45vw) / 2);
+}
+
+.textarea-cont {
+  width: 75%;
+  height: 100%;
+  resize: none;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: lightgray;
+}
+
+.priorityColor-cont {
+  width: 25%;
+  height: 100%;
+  background-color: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.priorityColor {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.main-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.ticket-cont {
+  width: 17rem;
+  height: 12rem;
+  background-color: #f1f2f6;
+}
+
+.ticket-color {
+  height: 1rem;
+}
+
+.ticket-id {
+  height: 2rem;
+  padding: 0.4rem;
+}
+
+.task-cont {
+  padding: 0.4rem;
+  height: calc(100% - 1rem - 2rem - 2rem);
+  outline: none;
+}
+
+.ticket-lock {
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: #747d8c;
+}
